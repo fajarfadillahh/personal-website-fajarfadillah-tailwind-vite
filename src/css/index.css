@@ -32,3 +32,18 @@
     @apply bg-gradient-to-tr from-red to-yellow;
   }
 }
+
+/* ===== HEADER SECTION ===== */
+@media screen and (max-width: 767px) {
+  .header__menu {
+    @apply fixed w-[80%] top-28 left-0 right-0 mx-auto text-center p-8 bg-body rounded-[2rem] bg-opacity-50 backdrop-blur opacity-0 scale-y-0 origin-[0%_0%] transition-all duration-400;
+  }
+}
+.header__link.active-link {
+  @apply font-medium bg-gradient-to-tr from-red to-yellow;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header__menu.show-menu {
+  @apply opacity-100 scale-y-100;
+}
