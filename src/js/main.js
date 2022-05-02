@@ -19,7 +19,7 @@ const scrollY = window.pageYOffset;
 function stickyHeader() {
   const header = document.getElementById("header");
 
-  this.scrollY > 150
+  this.scrollY > 5
     ? header.classList.add("sticky-action")
     : header.classList.remove("sticky-action");
 }
@@ -29,7 +29,7 @@ window.addEventListener("scroll", stickyHeader);
 function scrollUp() {
   const scrollup = document.getElementById("scroll-up");
 
-  this.scrollY > 10
+  this.scrollY > 200
     ? scrollup.classList.add("scroll-action")
     : scrollup.classList.remove("scroll-action");
 }
