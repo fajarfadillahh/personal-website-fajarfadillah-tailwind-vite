@@ -23,7 +23,7 @@
       id="header"
     >
       <div
-        class="header__container container h-24 flex justify-between items-center"
+        class="header__container container h-24 flex justify-between items-center md:relative"
       >
         <a
           href="#"
@@ -33,8 +33,10 @@
           Fadillah.
         </a>
 
-        <div class="header__menu" id="header-menu">
-          <ul class="header__list flex flex-col gap-6">
+        <div class="header__menu md:flex md:items-center" id="header-menu">
+          <ul
+            class="header__list flex flex-col gap-6 md:flex-row md:absolute md:left-[50%] md:translate-x-[-50%]"
+          >
             <li class="header__item">
               <a href="#" class="header__link active-link">Home</a>
             </li>
@@ -51,7 +53,7 @@
 
           <a
             href="#"
-            class="header__button button border-[1.5px] border-solid border-black text-black mt-6 transition-all duration-400 hover:bg-black hover:text-white"
+            class="header__button button border-[1.5px] border-solid border-black text-black mt-6 transition-all duration-400 hover:bg-black hover:text-white md:mt-0"
           >
             Hire Me
             <i class="bx bx-envelope header__button-icon text-[1.5rem]"></i>
@@ -59,7 +61,7 @@
         </div>
 
         <div
-          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer"
+          class="header__toggle inline-flex text-[1.5rem] text-black cursor-pointer md:hidden"
           id="header-toggle"
         >
           <i class="bx bx-menu"></i>
@@ -75,11 +77,11 @@
           <img
             src="./src/img/home-image.png"
             alt=""
-            class="home__img justify-self-center xs:w-[400px] sm:w-[430px]"
+            class="home__img justify-self-center xs:w-[400px] sm:w-[430px] md:w-[450px]"
           />
 
           <div
-            class="home__data text-center xs:w-[400px] xs:justify-self-center sm:w-[430px]"
+            class="home__data text-center xs:w-[400px] xs:justify-self-center sm:w-[430px] md:w-[450px]"
           >
             <span class="home__subtitle section-subtitle">Hi, My name is</span>
             <h1 class="home__title section-title">Fajar Fadillah Agustian</h1>
@@ -107,11 +109,11 @@
               <img
                 src="./src/img/portfolio-image-2.jpg"
                 alt=""
-                class="portfolio__content-img justify-self-center xs:w-[400px] sm:w-[430px]"
+                class="portfolio__content-img justify-self-center xs:w-[400px] sm:w-[430px] md:w-[450px]"
               />
 
               <div
-                class="portfolio__content-data text-center xs:w-[400px] xs:justify-self-center sm:w-[430px]"
+                class="portfolio__content-data text-center xs:w-[400px] xs:justify-self-center sm:w-[430px] md:w-[450px]"
               >
                 <span class="portfolio__content-subtitle section-subtitle"
                   >Web Design</span
@@ -137,11 +139,11 @@
               <img
                 src="./src/img/portfolio-image-1.jpg"
                 alt=""
-                class="portfolio__content-img justify-self-center xs:w-[400px] sm:w-[430px]"
+                class="portfolio__content-img justify-self-center xs:w-[400px] sm:w-[430px] md:w-[450px]"
               />
 
               <div
-                class="portfolio__content-data text-center xs:w-[400px] xs:justify-self-center sm:w-[430px]"
+                class="portfolio__content-data text-center xs:w-[400px] xs:justify-self-center sm:w-[430px] md:w-[450px]"
               >
                 <span class="portfolio__content-subtitle section-subtitle"
                   >Mobile App Design</span
@@ -167,11 +169,11 @@
               <img
                 src="./src/img/portfolio-image-3.jpg"
                 alt=""
-                class="portfolio__content-img justify-self-center xs:w-[400px] sm:w-[430px]"
+                class="portfolio__content-img justify-self-center xs:w-[400px] sm:w-[430px] md:w-[450px]"
               />
 
               <div
-                class="portfolio__content-data text-center xs:w-[400px] xs:justify-self-center sm:w-[430px]"
+                class="portfolio__content-data text-center xs:w-[400px] xs:justify-self-center sm:w-[430px] md:w-[450px]"
               >
                 <span class="portfolio__content-subtitle section-subtitle"
                   >Web App</span
@@ -200,7 +202,7 @@
       <!-- ===== CONTACT SECTION ===== -->
       <section class="contact section">
         <div
-          class="contact__container container grid xs:w-[400px] sm:w-[430px]"
+          class="contact__container container grid xs:w-[400px] sm:w-[430px] md:w-[450px]"
         >
           <div class="contact__data text-center">
             <span class="contact__subtitle section-subtitle">Let's Talk</span>
@@ -313,7 +315,9 @@
           </div>
         </div>
 
-        <p class="footer__copy text-[15px] text-grey text-center">
+        <p
+          class="footer__copy text-[15px] text-grey text-center md:text-[16px]"
+        >
           &copy; Copyrights - Fajar Fadillah Agustian. All rights reserved.
         </p>
       </div>

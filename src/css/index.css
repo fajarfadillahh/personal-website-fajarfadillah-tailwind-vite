@@ -13,20 +13,20 @@
     @apply pt-32 pb-16;
   }
   .section-subtitle {
-    @apply block text-[15px] bg-gradient-to-tr from-red to-yellow font-medium mb-2;
+    @apply block text-[15px] bg-gradient-to-tr from-red to-yellow font-medium mb-2 md:text-[16px];
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .section-title {
-    @apply text-[28px] text-black font-semibold mb-4 xs:text-[32px];
+    @apply text-[28px] text-black font-semibold mb-4 xs:text-[32px] md:text-[36px];
   }
   .section-text {
-    @apply text-[15px] text-grey leading-text mb-8;
+    @apply text-[15px] text-grey leading-text mb-8 md:text-[16px];
   }
 
   /* button class */
   .button {
-    @apply flex justify-center items-center gap-2 text-[15px] text-white font-medium py-4 px-8 rounded-2xl xs:inline-flex xs:justify-self-center;
+    @apply flex justify-center items-center gap-2 text-[15px] text-white font-medium py-4 px-8 rounded-2xl xs:inline-flex xs:justify-self-center md:text-[16px];
   }
   .button-gradient {
     @apply bg-gradient-to-tr from-red to-yellow;
