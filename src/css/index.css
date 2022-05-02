@@ -18,7 +18,7 @@
     -webkit-text-fill-color: transparent;
   }
   .section-title {
-    @apply text-[28px] text-black font-semibold mb-4 xs:text-[32px] md:text-[36px];
+    @apply text-[28px] text-black font-semibold mb-4 xs:text-[32px] md:text-[36px] lg:text-[42px];
   }
   .section-text {
     @apply text-[15px] text-grey leading-text mb-8 md:text-[16px];
